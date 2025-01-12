@@ -41,21 +41,22 @@ const Actions = styled.div`
   }
 `;
 
-export default ({
+export const FullWidthWithImage= ({
   navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">About</NavLink>
-      <NavLink href="#">Blog</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      <NavLink href="#">Login  </NavLink>
+      <NavLink href="#">Tours</NavLink>
+      <NavLink href="#">Events</NavLink>
+      <NavLink href="#">Meet your guides</NavLink>
+      <NavLink href="#">Gallery</NavLink>
     </NavLinks>
   ],
   heading = (
     <>
-      Find Perfect Hotels
+      Find your adventure
       <wbr />
       <br />
-      <span tw="text-primary-500">anywhere you go.</span>
+      <span className="text-primary-100">with local guides</span>
+      <span className="text-primary-500">with local guides</span>
     </>
   ),
   description = "We've been in the hotels business across the world for 5 years now. We assure you that you will always enjoy your stay with us.",
@@ -64,6 +65,7 @@ export default ({
   secondaryActionUrl = "#",
   secondaryActionText = "Search Hotels"
 }) => {
+
   return (
     <Container>
       <TwoColumn>
